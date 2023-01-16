@@ -51,13 +51,13 @@ const NoteCard = (props: Props) => {
 				}}
 			>
 				<Button
-					variant="contained"
+					variant="outlined"
 					sx={{ width: 1 / 3, mr: 2, p: 2 }}
 				>
 					<ChevronLeft />
 				</Button>
 				<Button
-					variant="contained"
+					variant="outlined"
 					sx={{ width: 1 / 3 }}
 				>
 					<ChevronRight />
