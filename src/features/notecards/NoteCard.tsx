@@ -1,4 +1,7 @@
 import { ChevronLeft, ChevronRight } from "@mui/icons-material";
+import StarIcon from "@mui/icons-material/Star";
+import EditIcon from "@mui/icons-material/Edit";
+
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Paper from "@mui/material/Paper";
@@ -15,7 +18,25 @@ const NoteCard = (props: Props) => {
 				padding: 3,
 			}}
 		>
-			<Typography sx={{ textAlign: "center" }}>1/114</Typography>
+			<Box
+				sx={{
+					display: "flex",
+					flex: "row",
+					justifyContent: "space-between",
+					alignItems: "center",
+				}}
+			>
+				<Typography sx={{ textAlign: "center" }}>Term</Typography>
+				<Typography sx={{ textAlign: "center" }}>1/114</Typography>
+				<Box sx={{ display: "flex", flex: "row" }}>
+					<Typography sx={{ textAlign: "center", mr: 2 }}>
+						<EditIcon />
+					</Typography>
+					<Typography sx={{ textAlign: "center" }}>
+						<StarIcon />
+					</Typography>
+				</Box>
+			</Box>
 			<Box sx={{ p: 10 }}>
 				<Typography sx={{ textAlign: "center", fontSize: "32px" }}>
 					Geological
