@@ -1,7 +1,7 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
 import "./App.css";
+
 import NoteCards from "./features/notecards/NoteCards";
+import { useState } from "react";
 
 function App() {
 	const [count, setCount] = useState(0);
