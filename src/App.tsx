@@ -1,14 +1,10 @@
-import "./App.css";
-
 import NoteCards from "./features/notecards/NoteCards";
-import { useState } from "react";
+import Register from "./features/auth/signup/Register";
 
 function App() {
-	const [count, setCount] = useState(0);
-
 	return (
 		<div className="App">
-			<NoteCards />
+			<Register />
 		</div>
 	);
 }
